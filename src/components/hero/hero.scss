@@ -1,0 +1,202 @@
+.hero {
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(180deg, rgb(12, 12, 29), rgb(17, 17, 50));
+  
+  .wrapper {
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .textContainer {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+
+    h2 {
+      font-size: 30px;
+      color: rebeccapurple;
+    }
+
+    h1 {
+      font-size: 70px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      button {
+        padding: 15px 30px;
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: transparent;
+        color: white;
+        cursor: pointer !important; /* Ensure pointer is applied */
+        font-weight: 300;
+  
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+        }
+      }
+    }
+
+    img {
+      width: 50px;
+      margin-top: 20px;
+    }
+  }
+
+  .imageContainer {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 100px;
+
+    img {
+      height: 500px;
+      width: 500px;
+    }
+  }
+
+  .slideingTextContainer {
+    position: absolute;
+    font-size: 40vh;
+    bottom: -20px;
+    white-space: nowrap;
+    color: #ffffff09;
+    font-weight: bold;
+    width: 100%; /* Ensure full width for sliding effect */
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .textContainer {
+      h1 {
+        font-size: 50px;
+      }
+
+      h2 {
+        font-size: 25px;
+      }
+
+      .buttons {
+        button {
+          font-size: 14px;
+          padding: 10px 20px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .imageContainer {
+      img {
+        height: 400px;
+        width: 400px;
+      }
+    }
+
+    .slideingTextContainer {
+      font-size: 30vh;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .textContainer {
+      width: 100%;
+      padding: 10px;
+
+      h1 {
+        font-size: 40px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .buttons {
+        justify-content: center;
+
+        button {
+          width: 100%;
+          max-width: 200px;
+          cursor: pointer;
+        }
+      }
+
+      img {
+        width: 40px;
+        margin: auto;
+      }
+    }
+
+    .imageContainer {
+      position: relative;
+      margin-top: 20px;
+
+      img {
+        height: 300px;
+        width: 300px;
+      }
+    }
+
+    .slideingTextContainer {
+      font-size: 20vh;
+      bottom: 10px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .textContainer {
+      h1 {
+        font-size: 30px;
+      }
+
+      h2 {
+        font-size: 16px;
+      }
+
+      .buttons {
+        flex-direction: column;
+        gap: 10px;
+
+        button {
+          width: 100%;
+          max-width: 150px;
+          font-size: 12px;
+          cursor: pointer;
+        }
+      }
+
+      img {
+        width: 30px;
+      }
+    }
+
+    .imageContainer {
+      img {
+        height: 200px;
+        width: 200px;
+      }
+    }
+
+    .slideingTextContainer {
+      font-size: 15vh;
+      bottom: 5px;
+    }
+  }
+}
