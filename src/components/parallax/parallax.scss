@@ -1,82 +1,81 @@
 .parallax {
-    width: 100%;
-    height: 100vh; /* Ensures the parallax section covers the full viewport height */
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  
-    h1 {
-      font-size: 80px;
-      color: white;
-      z-index: 4;
-      text-align: center;
-      margin: 0;
-      padding: 20px;
-  
-      @media (max-width: 1024px) {
-        font-size: 60px;
-      }
-  
-      @media (max-width: 768px) {
-        font-size: 40px;
-      }
-  
-      @media (max-width: 480px) {
-        font-size: 28px;
-      }
+  width: 100%;
+  height: 100vh; /* Ensures it covers the full viewport height */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  h1 {
+    font-size: 80px;
+    color: white;
+    z-index: 4;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+
+    @media (max-width: 1024px) {
+      font-size: 60px;
     }
-  
-    .mountains,
-    .planets,
-    .stars {
-      background-size: cover;
-      background-position: bottom center;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
+
+    @media (max-width: 768px) {
+      font-size: 40px;
     }
-  
-    .mountains {
-      background-image: url("/mountains.png");
-      z-index: 3;
-  
-      @media (max-width: 768px) {
-        background-size: 120%; /* Adjust scaling for smaller screens */
-      }
-  
-      @media (max-width: 480px) {
-        background-size: 150%;
-      }
-    }
-  
-    .planets {
-      background-image: url("/planets.png");
-      z-index: 2;
-  
-      @media (max-width: 768px) {
-        background-size: 120%;
-      }
-  
-      @media (max-width: 480px) {
-        background-size: 150%;
-      }
-    }
-  
-    .stars {
-      background-image: url("/stars.png");
-      z-index: 1;
-  
-      @media (max-width: 768px) {
-        background-size: 120%;
-      }
-  
-      @media (max-width: 480px) {
-        background-size: 150%;
-      }
+
+    @media (max-width: 480px) {
+      font-size: 28px;
     }
   }
-  
+
+  .mountains,
+  .planets,
+  .stars {
+    background-size: cover;
+    background-position: center center; /* Center the background */
+    width: 100%;
+    height: 100%; /* Make sure it always fills the parent */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .mountains {
+    background-image: url("/mountains.png");
+    z-index: 3;
+
+    @media (max-width: 768px) {
+      display: none; /* Adjust scaling for smaller screens */
+    }
+
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  .planets {
+    background-image: url("/planets.png");
+    z-index: 2;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  .stars {
+    background-image: url("/stars.png");
+    z-index: 1;
+
+    @media (max-width: 768px) {
+      background-size: contain;
+    }
+
+    @media (max-width: 480px) {
+      background-size: contain;
+    }
+  }
+}

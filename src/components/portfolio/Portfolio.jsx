@@ -24,7 +24,7 @@ const items = [{
     title:"Rent House",
     img:"/renthouse.png",
     desc:"RentHouse is a comprehensive platform designed to simplify the process of renting properties. It connects property owners and tenants, offering an easy-to-use interface for listing, searching, and managing rental properties. This app is working mode it is complete Frontend and backend working will be at your service soon...",
-    demo:"https://6746cc78ebd874b8e33ec363--frabjous-donut-a0bc7b.netlify.app/",
+    demo:"https://rent-house-10.onrender.com/",
     source:"https://github.com/Kalyani694/rent_house-UI",
 },
 ];

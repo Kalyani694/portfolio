@@ -97,6 +97,7 @@
           background: lightgray;
           color: black;
         }
+        
       }
     }
   
@@ -131,6 +132,9 @@
     }
   
     @media (max-width: 768px) {
+      .service-section {
+        display: block;
+      }
       .textContainer {
         p {
           font-size: 18px;
@@ -165,6 +169,9 @@
     }
   
     @media (max-width: 480px) {
+      .service-section {
+        display: block;
+      }
       .textContainer {
         p {
           font-size: 16px;
