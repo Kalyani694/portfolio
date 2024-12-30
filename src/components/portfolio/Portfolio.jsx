@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import "./portfolio.scss"
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
+import { source, title } from 'framer-motion/client';
 //import { desc, title } from 'framer-motion/client'
 const items = [{
     id: 1,
@@ -26,7 +27,21 @@ const items = [{
     desc:"RentHouse is a comprehensive platform designed to simplify the process of renting properties. It connects property owners and tenants, offering an easy-to-use interface for listing, searching, and managing rental properties. This app is working mode it is complete Frontend and backend working will be at your service soon...",
     demo:"https://rent-house-10.onrender.com/",
     source:"https://github.com/Kalyani694/rent_house-UI",
-},
+},{
+    id:4,
+    title: "Tech.Care",
+    img:"/tech.png",
+    desc:"I have build tach care web page front end how to patent entery patient all report which docoter are care and visit the patient all are define",
+    demo:"https://stirring-hotteok-34440f.netlify.app/",
+    source:"https://github.com/Kalyani694/Tech.care",
+
+},{
+    id:5,
+    title:"E-commerce",
+    img:"/ecommerce.png",
+    desc:"Developed the frontend for a clothing brand's e-commerce website using React.js, integrating the provided backend APIs.",
+    source:"https://github.com/Kalyani694/ecommerce",
+}
 ];
 const Single=({item})=>{
     const ref=useRef();
