@@ -13,10 +13,10 @@ const textVariants = {
 const Hero = () => {
   const handleDownload = () => {
     // Use the direct download link or host the resume in the public folder
-    const resumeUrl ="https://drive.google.com/file/d/1chgAf_JFizmdPsALlrjONW6lk2s4M4uu/view?usp=drivesdk";
+    const resumeUrl ="https://drive.google.com/file/d/1IODIetmngp3EiK9CgfljaRB3wLyCEqZB/view?usp=drivesdk";
     const link = document.createElement("a");
     link.href = resumeUrl;
-    link.download = "Kalyani_Borase_cv.pdf"; // Name of the file when downloaded
+    link.download = "Kalyani_Borase_cv.pdf"; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

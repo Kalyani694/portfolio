@@ -13,7 +13,16 @@ const items = [{
     
 },
 {
-    id: 2,
+     id: 2,
+    title: "SpaceX Launch Dashboard",
+    img: "/spacex.png",
+    desc: "Developed an interactive and responsive SpaceX Launch Dashboard that visualizes upcoming and past rocket launches. The project fetches real-time data using the SpaceX Unofficial API and displays mission details including launch name, date, status, and launch site.",
+    demo: "https://interview-for-kalyani-borase.netlify.app/",
+    source:"https://github.com/Kalyani694/interview-for-kalyani-borase"
+
+},
+{
+    id: 3,
     title: "Social Media",
     img: "/social.png",
     desc: "Social is a modern social media web application designed to connect users and facilitate communication, content sharing, and community building.User registration and authentication (with email/password or OAuth).Profile creation and customization.Post creation, editing, and deletion",
@@ -21,14 +30,14 @@ const items = [{
     source:"https://github.com/Kalyani694/social_media",
 },
 {
-    id: 3,
+    id: 4,
     title:"Rent House",
     img:"/renthouse.png",
     desc:"RentHouse is a comprehensive platform designed to simplify the process of renting properties. It connects property owners and tenants, offering an easy-to-use interface for listing, searching, and managing rental properties. This app is working mode it is complete Frontend and backend working will be at your service soon...",
     demo:"https://rent-house-10.onrender.com/",
     source:"https://github.com/Kalyani694/rent_house-UI",
 },{
-    id:4,
+    id:5,
     title: "Tech.Care",
     img:"/tech.png",
     desc:"I have build tach care web page front end how to patent entery patient all report which docoter are care and visit the patient all are define",
@@ -36,7 +45,7 @@ const items = [{
     source:"https://github.com/Kalyani694/Tech.care",
 
 },{
-    id:5,
+    id:6,
     title:"E-commerce",
     img:"/ecommerce.png",
     desc:"Developed the frontend for a clothing brand's e-commerce website using React.js, integrating the provided backend APIs.",

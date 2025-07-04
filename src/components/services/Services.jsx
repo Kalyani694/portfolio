@@ -43,20 +43,20 @@ const Services = () => {
                 </div>
             </motion.div>
             <motion.div className="listContainer" variants={variavts}>
-                <motion.div className="box" whileHover={{ background: "lightgray", color: "black" }}>
+                <motion.div className="box" >
                     <h2>Web Development Services</h2>
                     <p>Professional website development tailored to your needs.Expertise in creating responsive and dynamic websites using React.js, JavaScript, and modern frameworks.
                         Custom solutions for personal, business, or educational projects.
                     </p>
                 </motion.div>
-                <motion.div className="box" whileHover={{ background: "lightgray", color: "black" }}>
+                <motion.div className="box" >
                     <h2>Programming Language Training</h2>
                     <p>Comprehensive lessons in foundational programming languages:
                         C: Understanding fundamentals of logic and programming structures.
                         Java: Object-oriented programming and application development.
                         Python: Writing clean, efficient code and exploring libraries for versatile applications.</p>
                 </motion.div>
-                <motion.div className="box" whileHover={{ background: "lightgray", color: "black" }}>
+                <motion.div className="box" >
                     <h2>Data Structures and Algorithms (DSA)</h2>
                     <p>
                         Practical training in solving real-world problems using DSA.Understanding core concepts like arrays, linked lists, trees, graphs, and dynamic programming.
