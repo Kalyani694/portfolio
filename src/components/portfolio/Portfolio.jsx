@@ -50,6 +50,13 @@ const items = [{
     img:"/ecommerce.png",
     desc:"Developed the frontend for a clothing brand's e-commerce website using React.js, integrating the provided backend APIs.",
     source:"https://github.com/Kalyani694/ecommerce",
+},
+{
+    id:7,
+    title: "PlanMyMeal",
+    img:"/planMyMeal.png",
+    desc:"PlanMyMeal is a meal planning application that helps users create personalized meal plans based on their dietary preferences and nutritional goals. The app allows users to input their dietary restrictions, food preferences, and calorie targets to generate customized meal plans for the week.",
+    demo: "https://planmymeal.onrender.com/",
 }
 ];
 const Single=({item})=>{
